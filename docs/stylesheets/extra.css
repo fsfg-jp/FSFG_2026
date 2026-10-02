@@ -1,0 +1,273 @@
+/* =======================
+   全体：白ベース & フォント
+======================= */
+/*body {
+  background-color: #ffffff;
+  font-family: "Times New Roman", "Noto Serif JP", serif;
+  color: #222;
+}*/
+
+/* =======================
+   横幅（重要）
+======================= */
+.md-grid {
+  max-width: 100%;   /* ← これが筑波っぽさの核 */
+}
+
+/* =======================
+   本文の文字サイズ・行間
+   （flatly は bootstrap 系なので body に効かせる。
+     .md-content は material テーマ用で今は効いていない）
+======================= */
+body {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.md-content {
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* =======================
+   ヘッダー簡素化
+======================= */
+.md-header {
+  background: none;
+  box-shadow: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* サイトタイトル */
+.md-header__title {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+/* ヘッダー全体の背景色 */
+.navbar {
+  background-color: #13294b !important;  /* 好きな色 */
+  /*background-color: #24292f !important;  /* 好きな色 */
+  border-color: #002f6c;
+}
+
+
+
+/* =======================
+   ナビゲーション完全削除
+======================= */
+/* 右の目次も消す */
+/*.md-sidebar--secondary {
+  display: none;
+}*/
+
+
+/* 左サイドバーだけ消す */
+/*.md-nav__title {
+  display: none;
+}
+
+.bs-sidebar {
+  display: none !important;
+}*/
+
+.col-md-3 {
+  display: none;
+}
+
+/* 本文エリアを中央寄せ */
+.col-md-9 {
+  width: 100% !important;
+  max-width: 1000px;     /* ← 好きな幅に調整（重要） */
+  margin: 0 auto;       /* ← 中央寄せ */
+}
+
+/* さらに内側の余白調整 */
+.container {
+  width: 100%;
+}
+
+/* =======================
+   見出し
+======================= */
+h1, h2, h3 {
+  font-weight: normal;
+  margin-top: 2em;
+}
+
+h1 {
+  font-size: 34px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 19px;
+}
+
+/* =======================
+   リンク
+======================= */
+a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =======================
+   背景装飾完全削除
+======================= */
+.md-header,
+.md-main,
+.md-hero {
+  background-image: none !important;
+}
+
+/* =======================
+   フッター簡素化
+======================= */
+.md-footer {
+  display: none;
+}
+
+
+/* ==========================
+  future box
+  =========================*/
+.feature-box {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 20px 0;
+  background: #f9f9f9;
+}
+
+.feature-box h3 {
+  margin-top: 0;
+}
+
+.feature-box a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* --- 特集：見出し・タイトル・書誌情報 --- */
+.feature-label {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #888;
+}
+
+.feature-title {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* 著者名・掲載誌・年・arXiv 番号 */
+.feature-meta {
+  margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #777;
+}
+
+.feature-authors,
+.feature-ref {
+  display: block;
+}
+
+.feature-authors {
+  font-size: 11px;
+}
+
+.feature-ref {
+  color: #8a8a8a;
+}
+
+.feature-desc {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.feature-links {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* リンクは横並びのままにする（.feature-box a の指定を打ち消す） */
+.feature-links a {
+  display: inline;
+  margin-top: 0;
+}
+
+
+/* 2カラム全体 */
+.two-column {
+  display: flex;
+  gap: 30px;
+}
+
+/* 左：メイン */
+.main-content {
+  flex: 1.2;
+  top: 20px;
+}
+
+/* 右：サイド */
+.side-box {
+  flex: 1;
+  position: sticky;
+  top: 20px;
+}
+
+/* 右：サイド */
+.side-box2 {
+  flex: 0.5;
+  position: sticky;
+  top: 20px;
+}
+
+/* レスポンシブ（スマホ） */
+@media (max-width: 800px) {
+  .two-column {
+    flex-direction: column;
+  }
+}
+
+.profile {
+  display: flex;
+}
+
+.label {
+  width: 70px;
+  font-weight: bold;
+}
+
+.label2 {
+  width: 120px;
+  font-weight: bold;
+}
+
+.value {
+  flex: 1;
+}
+
+.spacer {
+  height: 8px;
+}
+
+a[rel="prev"],
+a[rel="next"] {
+  display: none !important;
+}

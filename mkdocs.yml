@@ -1,0 +1,27 @@
+site_name: FSFG2026
+site_url: https://fsfg-jp.github.io/FSFG_2026/
+
+nav:
+  - Home: index.md
+  - Registration: registration.md
+  - Link: link.md
+
+theme:
+  name: cosmo
+  locale: en
+  custom_dir: overrides   # 左の目次を消す (overrides/main.html)
+
+markdown_extensions:
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - include-markdown

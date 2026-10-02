@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{# 左側の目次 (toc.html) を出さず、本文を全幅にする #}
+{% block content %}
+    <div class="col-md-12" role="main">{% include "content.html" %}</div>
+{% endblock %}
+
+{% block extrahead %}
+  {{ super() }}
+  <link rel="icon" href="{{ 'img/favicon.ico' | url }}">
+  <link rel="apple-touch-icon" href="{{ 'img/apple-touch-icon.png' | url }}">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=TAGID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'TAGID');
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHSGV3P5CJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-DHSGV3P5CJ');
+  </script>
+
+{% endblock %}
+
+{% block footer %}
+  <hr>
+  <p>© First Stars and First Galaxies Workshop 2026</p>
+{% endblock %}
