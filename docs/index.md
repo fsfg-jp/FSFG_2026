@@ -35,7 +35,7 @@ We warmly welcome researchers and students interested in these topics, including
 
 ## Invited speakers (tentative)
 
-- Ken Chen (ASIAA): Population III binary stars
+- Ke-Jung (Ken) Chen (ASIAA): The First Stars, Binaries, and Supernovae
 - Myoungwon Jeon (Kyung Hee University): First stars and first galaxies
 - Jongwon Park (Yonsei University): First stars
 - Takayuki R. Saitoh (Kobe University): First galaxies
