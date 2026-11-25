@@ -271,3 +271,184 @@ a[rel="prev"],
 a[rel="next"] {
   display: none !important;
 }
+
+
+/* ==========================
+  プログラム（program.md）
+  =========================*/
+.program-info {
+  border-left: 4px solid #13294b;
+  background: #f7f8fa;
+  padding: 12px 18px;
+  margin: 20px 0;
+}
+
+.program-info p {
+  margin: 0.3em 0;
+}
+
+.program-days a {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  padding: 4px 14px;
+  border: 1px solid #13294b;
+  border-radius: 3px;
+  font-size: 15px;
+  color: #13294b;
+}
+
+.program-days a:hover {
+  background: #13294b;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 固定ナビバーに見出しが隠れないようにする */
+h2[id^="day"] {
+  scroll-margin-top: 80px;
+}
+
+table.program-table {
+  width: 100%;
+  margin: 8px 0 24px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-collapse: collapse;
+}
+
+/* mkdocs テーマが付ける table-striped / table-hover の色を無効化（色は td に付ける） */
+table.program-table tbody tr,
+table.program-table tbody tr:nth-of-type(odd),
+table.program-table tbody tr:hover {
+  background-color: transparent;
+}
+
+table.program-table th,
+table.program-table td {
+  padding: 8px 10px;
+  vertical-align: top;
+  border-top: 1px solid #e3e5e8;
+  background-color: #fff;
+}
+
+table.program-table thead th {
+  border-bottom: 2px solid #13294b;
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+}
+
+table.program-table .time {
+  width: 7.5em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: #444;
+}
+
+table.program-table .who {
+  width: 32%;
+}
+
+/* セッション名 */
+table.program-table tr.session td {
+  background-color: #13294b;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 10px;
+  letter-spacing: 0.02em;
+}
+
+/* 休憩・昼食 */
+table.program-table tr.break td {
+  background-color: #f2f3f5;
+  color: #666;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* 開会・閉会など */
+table.program-table tr.event td {
+  color: #444;
+  font-size: 14px;
+}
+
+table.program-table tr.dinner td {
+  background-color: #fbf6ea;
+  color: #444;
+}
+
+/* 招待講演 */
+table.program-table tr.invited td {
+  background-color: #eef3fa;
+}
+
+table.program-table .speaker {
+  display: inline;
+}
+
+table.program-table .affil {
+  display: block;
+  font-size: 13px;
+  color: #777;
+}
+
+.badge-invited {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 6px;
+  font-size: 11px;
+  line-height: 1.7;
+  border-radius: 3px;
+  background: #13294b;
+  color: #fff;
+  vertical-align: 1px;
+}
+
+table.program-table .note {
+  margin-left: 6px;
+  font-size: 12px;
+  color: #888;
+}
+
+table.program-table .note::before { content: "("; }
+table.program-table .note::after  { content: ")"; }
+html[lang="ja"] table.program-table .note::before { content: "（"; }
+html[lang="ja"] table.program-table .note::after  { content: "）"; }
+
+table.program-table .tbd {
+  color: #999;
+}
+
+/* スマホ：講演者とタイトルを縦に並べる */
+@media (max-width: 640px) {
+  table.program-table thead {
+    display: none;
+  }
+  table.program-table,
+  table.program-table tbody {
+    display: block;
+  }
+  table.program-table tr {
+    display: grid;
+    grid-template-columns: 4.2em 1fr;
+    border-top: 1px solid #e3e5e8;
+  }
+  table.program-table td {
+    display: block;
+    border-top: none;
+    width: auto !important;
+  }
+  table.program-table td.time {
+    white-space: normal;
+  }
+  table.program-table tr.talk td.time {
+    grid-row: span 2;
+  }
+  table.program-table tr.session td {
+    grid-column: 1 / -1;
+  }
+  table.program-table tr.talk td.title {
+    padding-top: 0;
+  }
+}

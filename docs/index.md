@@ -37,10 +37,10 @@ We warmly welcome researchers and students interested in these topics, including
 
 - Ke-Jung (Ken) Chen (ASIAA): The First Stars, Binaries, and Supernovae
 - Myoungwon Jeon (Kyung Hee University): First stars and first galaxies
-- Jongwon Park (Yonsei University): First stars
+- Jongwon Park (Kyung Hee University): First stars
 - Takayuki R. Saitoh (Kobe University): First galaxies
 - Takashi J. Moriya (NAOJ): High-redshift transients
-- Takahiro Morishita (Tohoku University): Observations of early galaxies (tentative)
+- Takahiro Morishita (Tohoku University): Observations of early galaxies
 - Yoshito Shimajiri (Kyushu Kyoritsu University): Hub-filament systems
 
 Additional invited talks are currently under consideration. Further information, including talk titles, will be announced on the meeting website and in future circulars.
