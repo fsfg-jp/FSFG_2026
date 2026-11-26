@@ -43,7 +43,6 @@ We warmly welcome researchers and students interested in these topics, including
 - Takahiro Morishita (Tohoku University): Observations of early galaxies
 - Yoshito Shimajiri (Kyushu Kyoritsu University): Hub-filament systems
 
-Additional invited talks are currently under consideration. Further information, including talk titles, will be announced on the meeting website and in future circulars.
 
 
 <!-- ## News
